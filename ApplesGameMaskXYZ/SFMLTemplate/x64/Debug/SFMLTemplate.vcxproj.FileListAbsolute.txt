@@ -1,0 +1,2 @@
+C:\Users\furse\OneDrive\Рабочий стол\xyz-cpp-course-template-latest\SFMLTemplate\x64\Debug\SFMLTemplate.exe
+C:\Users\furse\OneDrive\Рабочий стол\ApplesGameXYZ\SFMLTemplate\x64\Debug\SFMLTemplate.exe
