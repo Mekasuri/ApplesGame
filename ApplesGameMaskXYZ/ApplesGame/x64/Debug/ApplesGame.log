@@ -1,2 +1,18 @@
-﻿  MainMenu.cpp
-  ApplesGame.vcxproj -> C:\Users\furse\OneDrive\Рабочий стол\ApplesGameMaskXYZ\ApplesGame\x64\Debug\ApplesGame.exe
+﻿  Apples.cpp
+C:\Users\furse\OneDrive\Документы\GitHub\ApplesGame\ApplesGameMaskXYZ\ApplesGame\Apples.cpp(8,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  BackGround.cpp
+  BadApples.cpp
+  Game.cpp
+  GameData.cpp
+  GameMain.cpp
+C:\Users\furse\OneDrive\Документы\GitHub\ApplesGame\ApplesGameMaskXYZ\ApplesGame\GameMain.cpp(8,11): warning C4244: 'initializing': conversion from 'time_t' to 'int', possible loss of data
+  GoldApple.cpp
+  Hearts.cpp
+  MainMenu.cpp
+  Math.cpp
+  Player.cpp
+  Restart.cpp
+  Sounds.cpp
+  Text.cpp
+  Generating Code...
+  ApplesGame.vcxproj -> C:\Users\furse\OneDrive\Документы\GitHub\ApplesGame\ApplesGameMaskXYZ\ApplesGame\x64\Debug\ApplesGame.exe
