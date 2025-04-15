@@ -18,7 +18,12 @@ namespace ApplesGame {
 		mainMenuBackGround.ApplesChoiceShape.setPosition(mainMenuBackGround.ApplesChoisePosition.x, mainMenuBackGround.ApplesChoisePosition.y);
 		mainMenuBackGround.online = static_cast<int>(10 + std::round(rand() / (float)RAND_MAX * 10000));
 
-
+		mainMenuBackGround.question.message = "You want to leave(Y/N)?";//Инициализация//Измененное место
+		mainMenuBackGround.question.color = sf::Color::White;
+		mainMenuBackGround.question.textSize = 30;
+		mainMenuBackGround.question.position.x = 20;
+		mainMenuBackGround.question.position.y = 530;
+		LableInitialization(mainMenuBackGround.question);
 
 		mainMenuBackGround.OnlineLabel.position.x = 790;
 		mainMenuBackGround.OnlineLabel.position.y = 730;
@@ -84,8 +89,32 @@ namespace ApplesGame {
 			}
 			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
 				mainMenuBackGround.ClickSound.sound.play();
-				window.close();
-				return;
+				while (true) {//Цикл//Измененное место
+					sf::Event event;
+					while (window.pollEvent(event)) {
+						if (event.type == sf::Event::Closed) {
+							window.close();
+						}
+					}
+
+					if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Y)) {
+						mainMenuBackGround.ClickSound.sound.play();
+						window.close();
+						return;
+					}
+					else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::N)) {
+						mainMenuBackGround.ClickSound.sound.play();
+						break;
+					}
+
+					window.clear();
+					window.draw(mainMenuBackGround.MainBackGroundSprite);
+					window.draw(mainMenuBackGround.OnlineLabel.text);
+					window.draw(mainMenuBackGround.SpeedChoiceShape);
+					window.draw(mainMenuBackGround.ApplesChoiceShape);
+					window.draw(mainMenuBackGround.question.text);
+					window.display();
+				}
 			}
 			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 				gameState.state = State::Game;

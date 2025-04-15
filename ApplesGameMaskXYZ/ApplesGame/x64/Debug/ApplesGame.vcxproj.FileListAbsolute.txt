@@ -3,4 +3,3 @@ C:\Users\furse\OneDrive\Рабочий стол\ApplesGame\ApplesGame\x64\Debug\
 C:\Users\furse\OneDrive\Рабочий стол\ApplesGameXYZ\ApplesGame\x64\Debug\ApplesGame.exe
 C:\Users\furse\OneDrive\Рабочий стол\Active Projects\ApplesGameXYZ\ApplesGame\x64\Debug\ApplesGame.exe
 C:\Users\furse\OneDrive\Рабочий стол\ApplesGameMaskXYZ\ApplesGame\x64\Debug\ApplesGame.exe
-C:\Users\furse\OneDrive\Документы\GitHub\ApplesGame\ApplesGameMaskXYZ\ApplesGame\x64\Debug\ApplesGame.exe
