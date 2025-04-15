@@ -18,7 +18,7 @@ namespace ApplesGame {
 		mainMenuBackGround.ApplesChoiceShape.setPosition(mainMenuBackGround.ApplesChoisePosition.x, mainMenuBackGround.ApplesChoisePosition.y);
 		mainMenuBackGround.online = static_cast<int>(10 + std::round(rand() / (float)RAND_MAX * 10000));
 
-		mainMenuBackGround.question.message = "You want to leave(Y/N)?";//Инициализация//Измененое место
+		mainMenuBackGround.question.message = "You want to leave(Y/N)?";//Инициализация//Измененное место
 		mainMenuBackGround.question.color = sf::Color::White;
 		mainMenuBackGround.question.textSize = 30;
 		mainMenuBackGround.question.position.x = 20;
@@ -89,7 +89,7 @@ namespace ApplesGame {
 			}
 			else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
 				mainMenuBackGround.ClickSound.sound.play();
-				while (true) {//Цикл//Измененое место
+				while (true) {//Цикл//Измененное место
 					sf::Event event;
 					while (window.pollEvent(event)) {
 						if (event.type == sf::Event::Closed) {
