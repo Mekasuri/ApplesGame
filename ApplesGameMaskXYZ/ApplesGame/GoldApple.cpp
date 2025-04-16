@@ -9,7 +9,7 @@ namespace ApplesGame {
 		goldApple.GoldAppleSprite.setTexture(goldApple.GoldAppleTexture);
 		goldApple.GoldAppleSprite.setPosition(goldApple.GoldApplePosition.x, goldApple.GoldApplePosition.y);
 		SetSpriteSize(goldApple.GoldAppleSprite, GOLD_APPLE_SIZE, GOLD_APPLE_SIZE);
-		SetSprieOrigin(goldApple.GoldAppleSprite, 0.5, 0.5);
+		SetSpriteOrigin(goldApple.GoldAppleSprite, 0.5, 0.5);
 	}
 
 	void GoldAppleDrawing(sf::RenderWindow& window, GoldApple& goldApple) {

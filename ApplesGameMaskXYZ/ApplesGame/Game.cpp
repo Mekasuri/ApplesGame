@@ -1,19 +1,19 @@
 #include "Game.h"
 namespace ApplesGame {
 	void GameStateInitialization(Game& game) {
-		game.gameState.state = State::MainMaiu;
+		game.gameState.state = State::MainManu;
 		game.gameState.choice = 0b00000101;
 	}
 
 	void TextInitialization(Game& game) {
 		game.LabelScore.position.x = 10;
 		game.LabelScore.position.y = 80;
-		LableInitialization(game.LabelScore);
+		LabelInitialization(game.LabelScore);
 
 		game.LableSpeed.position.x = 870;
 		game.LableSpeed.position.y = 10;
 		game.LableSpeed.textSize = 35;
-		LableInitialization(game.LableSpeed);
+		LabelInitialization(game.LableSpeed);
 	}
 
 	void GameInitialization(Game& game) {
@@ -41,7 +41,7 @@ namespace ApplesGame {
 					game.badApples.lives++;
 				}
 				if (game.player.playerSpeed >= 150) {
-					if (game.gameState.choice & 0b00000001) {
+					if (game.gameState.choice & SPEED_ON) {
 						game.player.playerSpeed -= 100;
 					}
 				}
@@ -55,17 +55,17 @@ namespace ApplesGame {
 				if (collision(game.player.playerPosition, PLAYER_SIZE, game.apples.ApplesPosition[i], APPLES_SIZE)) {
 					game.AppleEatSound.sound.play();
 
-					if (game.gameState.choice & 0b00000001) {
+					if (game.gameState.choice & SPEED_ON) {
 						game.player.playerSpeed += 25;
 						game.goldApple.GoldAppleSpeed += 25;
 					}
 					
-					if (game.gameState.choice & 0b00000100) {
+					if (game.gameState.choice & APPLES_INFINITE_ON) {
 						++game.apples.numApplesEaten;
 						game.apples.ApplesPosition[i].x = rand() / (float)RAND_MAX * SCREEN_WIDTH;
 						game.apples.ApplesPosition[i].y = rand() / (float)RAND_MAX * SCREEN_HEIGHT;
 					}
-					else if (game.gameState.choice & 0b00001000) {
+					else if (game.gameState.choice & APPLES_INFINITE_OFF) {
 						game.apples.isAppleEaten[i] = true;
 						++game.apples.numApplesEaten;
 					}

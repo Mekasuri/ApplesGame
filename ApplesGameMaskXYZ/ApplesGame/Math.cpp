@@ -9,7 +9,7 @@ namespace ApplesGame {
 		sprite.setScale(scale);
 	}
 
-	void SetSprieOrigin(sf::Sprite& sprite, float originX, float originY) {
+	void SetSpriteOrigin(sf::Sprite& sprite, float originX, float originY) {
 		sf::FloatRect spriteRect = sprite.getLocalBounds();
 		sprite.setOrigin(originX * spriteRect.width, originY * spriteRect.height);
 	}

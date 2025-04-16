@@ -2,7 +2,7 @@
 #include "Settings.h"
 #include <cassert>
 namespace ApplesGame {
-	void LableInitialization(Label& label) {
+	void LabelInitialization(Label& label) {
         assert(label.textFont.loadFromFile(RESOURCES_PATH + "/Pacmania.otf"));
         label.text.setFont(label.textFont);
         label.text.setCharacterSize(label.textSize);

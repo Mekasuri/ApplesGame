@@ -16,7 +16,7 @@ namespace ApplesGame {
 			badApples.BadApplesSprite[i].setTexture(badApples.BadApplesTexture);
 			badApples.BadApplesSprite[i].setPosition(badApples.BadApplesPosition[i].x, badApples.BadApplesPosition[i].y);
 			SetSpriteSize(badApples.BadApplesSprite[i], BAD_APPLES_SIZE, BAD_APPLES_SIZE);
-			SetSprieOrigin(badApples.BadApplesSprite[i], 0.5f, 0.5f);
+			SetSpriteOrigin(badApples.BadApplesSprite[i], 0.5f, 0.5f);
 		}
 	}
 

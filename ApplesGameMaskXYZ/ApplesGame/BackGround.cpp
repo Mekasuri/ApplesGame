@@ -10,7 +10,7 @@ namespace ApplesGame{
 		backGround.BackGroundSprite.setTexture(backGround.BackGroundTexture);
 		backGround.BackGroundSprite.setPosition(backGround.BackGroundPosition.x, backGround.BackGroundPosition.y);
 		SetSpriteSize(backGround.BackGroundSprite, SCREEN_WIDTH , SCREEN_HEIGHT);
-		SetSprieOrigin(backGround.BackGroundSprite, 0.5, 0.5);
+		SetSpriteOrigin(backGround.BackGroundSprite, 0.5, 0.5);
 	}
 
 	void BackGroundDraw(sf::RenderWindow& window, GameBackGround& backGround) {

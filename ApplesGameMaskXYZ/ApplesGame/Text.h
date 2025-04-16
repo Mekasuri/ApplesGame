@@ -11,5 +11,5 @@ namespace ApplesGame {
 		sf::Color color = sf::Color::White;
 		unsigned textSize = 30;
 	};
-	void LableInitialization(Label& label);
+	void LabelInitialization(Label& label);
 }

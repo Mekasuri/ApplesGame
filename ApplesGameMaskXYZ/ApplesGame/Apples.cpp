@@ -20,13 +20,13 @@ namespace ApplesGame {
 			apples.ApplesSprite[i].setTexture(apples.ApplesTexture);
 			apples.ApplesSprite[i].setPosition(apples.ApplesPosition[i].x, apples.ApplesPosition[i].y);
 			SetSpriteSize(apples.ApplesSprite[i], APPLES_SIZE, APPLES_SIZE);
-			SetSprieOrigin(apples.ApplesSprite[i], 0.5f, 0.5f);
+			SetSpriteOrigin(apples.ApplesSprite[i], 0.5f, 0.5f);
 		}
 	}
 
 	void ApplesDrawin(sf::RenderWindow& window, Apples& apples, GameState& gameState) {
 		for (int i = 0; i < apples.numApples; ++i) {
-			if (gameState.choice & 0b00001000) {
+			if (gameState.choice & APPLES_INFINITE_OFF) {
 				if (!apples.isAppleEaten[i]) {
 					window.draw(apples.ApplesSprite[i]);
 					if (apples.numApplesEaten == apples.numApples) {

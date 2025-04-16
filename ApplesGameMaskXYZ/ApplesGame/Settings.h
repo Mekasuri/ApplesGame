@@ -15,4 +15,10 @@ namespace ApplesGame {
 	const float GOLD_APPLE_SPEED = 200.f;
 	const float APPLES_SIZE = 25.f;
 	const float BAD_APPLES_SIZE = 70.f;
+
+	//NOT FOR TOUCH
+	const int SPEED_ON = 1;
+	const int SPEED_OFF = 1 << 1;
+	const int APPLES_INFINITE_ON = 1 << 2;
+	const int APPLES_INFINITE_OFF = 1 << 3;
 }

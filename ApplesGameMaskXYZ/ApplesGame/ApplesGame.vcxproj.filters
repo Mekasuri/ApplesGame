@@ -49,6 +49,9 @@
     <ClCompile Include="Sounds.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="MainGameLoop.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Settings.h">
@@ -91,6 +94,9 @@
       <Filter>Sources</Filter>
     </ClInclude>
     <ClInclude Include="Sounds.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGameLoop.h">
       <Filter>Sources</Filter>
     </ClInclude>
   </ItemGroup>

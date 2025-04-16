@@ -8,7 +8,7 @@ namespace ApplesGame {
 		player.PlayerSprite.setTexture(player.PlayerTexture);
 		player.PlayerSprite.setPosition(player.playerPosition.x, player.playerPosition.y);
 		SetSpriteSize(player.PlayerSprite, PLAYER_SIZE, PLAYER_SIZE);
-		SetSprieOrigin(player.PlayerSprite, 0.5, 0.5);
+		SetSpriteOrigin(player.PlayerSprite, 0.5, 0.5);
 
 		player.PlayerDirection = sf::Vector2f(1.f, 1.f);
 		player.flipX = false;

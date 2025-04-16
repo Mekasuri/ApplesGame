@@ -38,5 +38,6 @@ namespace ApplesGame {
 		Sound ClickSound{};
 	};
 	void RestartInitialisation(Restart& restart, Apples& apples);
+	void UpdateState(Apples& apples, GoldApple& goldApple, Player& player, BadApples& badApples);
 	void RestartLoop(sf::RenderWindow& window, Restart& restart, GameState& gameState, Player& player, Apples& apples, GoldApple& goldApple, BadApples& badApples);
 }

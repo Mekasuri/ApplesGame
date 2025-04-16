@@ -10,7 +10,7 @@ namespace ApplesGame {
 			hearts.HeartSprite[i].setPosition(hearts.HeartPosition.x, hearts.HeartPosition.y);
 			hearts.HeartPosition.x += 65;
 			SetSpriteSize(hearts.HeartSprite[i], 80, 80);
-			SetSprieOrigin(hearts.HeartSprite[i], 0.5, 0.5);
+			SetSpriteOrigin(hearts.HeartSprite[i], 0.5, 0.5);
 		}
 	}
 }

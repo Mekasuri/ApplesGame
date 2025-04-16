@@ -24,5 +24,7 @@ namespace ApplesGame {
 		Sound ClickSound{};
 	};
 	void MainMenuInitialization(MainMenu& mainMenuBackGround);
+	void ExitDialog(sf::RenderWindow& window, MainMenu& mainMenuBackGround, GameState& gameState);
+	void ChoiceTheMode(sf::RenderWindow& window, MainMenu& mainMenuBackGround, GameState& gameState);
 	void MainMenuChoice(sf::RenderWindow& window, MainMenu& mainMenuBackGround, GameState& gameState);
 }

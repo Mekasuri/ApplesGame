@@ -2,13 +2,14 @@
 namespace ApplesGame {
 	extern int Score;
 	enum class State {
-		MainMaiu = 0,
+		MainManu = 0,
 		Restart,
-		Game
+		Game,
 	};
 	struct GameState {
 		State state;
 		int choice = 0b00000101;
+		bool ExitDialog = false;
 	};
 	enum class Direction {
 		Right = 0,
