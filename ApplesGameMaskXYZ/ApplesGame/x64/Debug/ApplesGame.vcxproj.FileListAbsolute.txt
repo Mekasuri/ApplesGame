@@ -1,5 +1,0 @@
-C:\Users\furse\OneDrive\Рабочий стол\xyz-cpp-course-template-latest\ApplesGame\x64\Debug\ApplesGame.exe
-C:\Users\furse\OneDrive\Рабочий стол\ApplesGame\ApplesGame\x64\Debug\ApplesGame.exe
-C:\Users\furse\OneDrive\Рабочий стол\ApplesGameXYZ\ApplesGame\x64\Debug\ApplesGame.exe
-C:\Users\furse\OneDrive\Рабочий стол\Active Projects\ApplesGameXYZ\ApplesGame\x64\Debug\ApplesGame.exe
-C:\Users\furse\OneDrive\Рабочий стол\ApplesGameMaskXYZ\ApplesGame\x64\Debug\ApplesGame.exe
